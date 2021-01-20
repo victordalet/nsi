@@ -1,0 +1,38 @@
+@font-face{
+  font-family: my_font;
+  src: url("../font/Voldemort.TTF");
+}
+
+#cadre_bleu{
+   border:  10px solid blue;  
+}
+
+h1{
+	color : red;
+	text-align: center;
+	font-family: my_font ;
+	font-size: 50px;
+}
+
+div{
+    text-align: center;
+
+}
+
+#envoie{
+   width: 90%;
+}
+
+body {
+	background-color : black;
+}
+
+form{
+	border : 2px solid white;
+	margin-left	: 300px;
+	margin-right : 300px;
+	color : white;
+	font-family: my_font ;
+	text-align: center;
+	
+}

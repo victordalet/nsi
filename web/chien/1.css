@@ -1,0 +1,36 @@
+img{
+	border:  4px dotted black;
+	
+}
+h1{
+	color : red;
+	text-decoration : underline;
+	margin-left : 50px;
+}
+h2{
+	color : white ; 
+	text-decoration : underline green;
+}
+
+#buldog{ 
+    font-weight: bold;
+}
+span.name {
+	color : green;
+	
+}
+li:hover { /* hover permet passer clique souris*/
+	color : red;
+	font-size: 35px ;
+	 
+	
+}
+body {
+	background-color : orange;
+}
+
+form{
+	border : 4px solid green;
+	margin-left	: 20px;
+	
+}
