@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html lang= "fr">
+     <head>
+	        <title> test </title>	
+	         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+			<script  src="js/scripts.js"> </script>
+     </head>
+     <body>
+			<form method ="get" action="index.html" >
+			   <label for="mot_de_passe">taper le mot de passe </label> <input id="mot_de_passe" type="password" />
+			   <input type="button" value="voir" onclick="affichage_mot2passe();">
+			   <input type = "button" value="envoyer" onclick="validationMDP();" />
+			   <input type="button" value="majuscules" onclick="majuscules(); ">
+			   <input  type = "button" value="aide" onmouseout="indice_invisible();" onmouseover="indice_visible();"  /> <br>
+               <input type="button" id="tp" value="magie" onmouseover="randomBouton();" onclick="cliqueTP();">
+	       </form>
+		   <h2 id ="indice"> suite de 1 à 6 </h2> 
+      </body>
+</html>	 
