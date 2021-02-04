@@ -1,0 +1,51 @@
+<!doctype HTML>
+<html lang= "fr">
+     <head>
+	        <title> couleur </title>	
+	         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+			<script src="js/1.js"> </script>
+     </head>
+     <body>
+			  <h1 id="couleur"> hello world </h1> <br>
+		  <input type="button" value="couleur rouge" onclick="rouge();">
+		  <input type="button" value="couleur verte" onclick="vert();">
+		  <input type="button" value="couleur bleu" onclick="bleu();">
+		  <input type="button" value="couleur aléatoire" onclick="randomCouleurs();">
+		  <input type="button" value="couleur du cadre aléatoire" onclick="cadrecouleurs();">
+		  <input type="button" value="boite de nuit" onclick="pause();">
+		  <br>
+		  <input type="button" id="tp" value=" click me if you can" onmouseover="randomBouton()"; onclick="cliquebouton();">
+		  <!-- couleur --> <br>
+		  <h2> Personaliser le style de la page </h2> 
+		  
+		  <label for="couleurfond" > couleur du fond de la page </label>
+		  <select id="couleurfond" onchange="couleurDemande();">
+		    <option value=""></option>
+			<option value="red">rouge</option>
+			<option value="green">vert</option>
+			<option value="blue">bleu</option>
+			<option value="grey">gris</option>
+			<option value="black">noire</option>
+          </select>
+		  <br>
+		  <label for="couleurtext" > couleur du text </label>
+		  <select id="couleurtext" onchange="couleurDemandetext();">
+		    <option value=""></option>
+			<option value="red">rouge</option>
+			<option value="green">vert</option>
+			<option value="blue">bleu</option>
+			<option value="grey">gris</option>
+			<option value="black">noire</option>
+          </select>
+		  <br>
+		  <label for="couleurtextfond" > couleur du fond du text </label>
+		  <select id="couleurtextfond" onchange="couleurDemandetextfond();">
+		    <option value=""></option>
+			<option value="red">rouge</option>
+			<option value="green">vert</option>
+			<option value="blue">bleu</option>
+			<option value="grey">gris</option>
+			<option value="black">noire</option>
+          </select>
+    </body>      
+</html>	 
