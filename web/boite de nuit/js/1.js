@@ -103,5 +103,3 @@ function couleurDemandetextfond()
 {
 	document.getElementById('couleur').style.backgroundColor= document.getElementById("couleurtextfond").value;
 }
-
-

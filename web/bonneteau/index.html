@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html lang="fr">
+      <head> 
+	       <title> Le jeu du bonneteau  </title> <!--le titre de la page -->
+		   <link rel="stylesheet" href="css/style.css"> <!-- on imparte le css -->
+		   <script src="js/1.js"></script> <!-- on import le js -->
+		   <link rel="icon" type="image/png" sizes="32x32" href="images/piece.png">
+	  </head>
+	  
+	  <body>
+	  	  <h1> jeu du Bonteau </h1>
+	  	  <input type="button" id="rejouer" onclick="play = restart(play);" value="jouer" >
+		  <div class="jeu">
+		  	  <h2><img id = "argents" alt="piece" src="images/piece.png" > 
+		  	  	  <input type="button" id="nombre" value="20">  
+		  	  </h2>
+		  	  <h1><input type="button" id="resultat" value="0" ></h1>
+		  	  <div class="centrale">
+				  <img onclick="gold = aleatoire(gold,play); play = animation1(play);" id="gobelet" alt="gobelet1" src="images/gobelet.png"> 
+				  <img onclick="gold = aleatoire(gold,play);play = animation2(play);" alt="gobelet2" id="gobelet2" src="images/gobelet.png"> 
+				  <img alt="gobelet3" id="gobelet3" onclick="gold = aleatoire(gold,play); play = animation3(play);" src="images/gobelet.png"> 
+			  </div>
+		  </div>
+	  <h2> Boutique: </h2>	
+	  <div class="centrale">
+	  	   <p><img alt="skin1" id="skin1" src="images/gobelet.png">
+	  	   <img alt="skin2" id="skin2" src="images/gobelet4.png">
+           <img alt="skin4" id="skin4" src="images/gobelet3.png">
+           <img alt="skin5" id="skin5" src="images/gobelet2.png"></p>
+           	   &emsp;&emsp;&emsp;&emsp;
+           	  <p><input type="button" value = "skin neutre (0 pièce)" onclick="gold,gobeletA2,gobeletA3,gobeletA4 = changeskin(1,gold,gobeletA2,gobeletA3,gobeletA4);">
+           	   &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;
+           	  <input type="button" value = "skin éclaire (10 pièces)" onclick="gold,gobeletA2,gobeletA3,gobeletA4 = changeskin(4,gold,gobeletA2,gobeletA3,gobeletA4);">
+           	  &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;
+           	  <input type="button" value = "skin golder (50 pièces)" onclick="gold,gobeletA2,gobeletA3,gobeletA4 = changeskin(3,gold,gobeletA2,gobeletA3,gobeletA4);">
+           	  &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;
+           	  <input type="button" value = "skin patriotique (100 pièces)" onclick="changeskin(2,gold,gobeletA2,gobeletA3,gobeletA4);">
+           </p> 
+	  </div>	
+	  <footer>
+            <p>&copy; Copyright 2021 –Victor Dalet  </p>
+      </footer>
+    </body>	
+</html>	  
+		
