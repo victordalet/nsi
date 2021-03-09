@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html lang="fr">
+      <head> 
+	       <title> petit formulaire  </title> <!--le titre de la page -->
+		   <link rel="stylesheet" href="1.css"> <!-- on imparte le css -->
+		   <script src="1.js"></script> <!-- on import le js -->
+		   
+	  </head>
+	  
+	  <body>
+	        <form  method="post" id="formulaire" action="1.php">
+			   <label for="nom"> votre nom </label> 
+			   <input id="nom" name="name"> <br>
+			   <label for="message"> votre mot de passe </label>
+			  <textarea id="message" name="message"> </textarea> <br>
+			  <h1> calculatrice : </h1>
+			  <input name="nombre1" >
+			  <select name="symbole">
+			         <option> + </option>
+					 <option> - </option>
+					 <option>/ </option>
+					 <option> * </option>
+			  </select>
+			  <input name="nombre2" >
+			   <input type="submit" value="envoyer" onclick="name = envoie();"> <br>
+		    </form>
+<html>			
+		   
