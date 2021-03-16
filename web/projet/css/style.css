@@ -20,15 +20,12 @@ input.index
 {
 	width : 20%;
 	height : 75%;
-	color : black;
-	border-radius: 10px;
-	background-color : blue;
+	border-radius: 10px;;
 }
 input.index:hover
 {
 	width : 25%;
-	height : 80%
-	color : orange;
+	height : 80%;
 	border-radius: 10px;
 }
 h2
@@ -90,4 +87,13 @@ h3
 	text-align: center;
 	width : 40%;
 	
+}
+footer {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+#math
+{
+    background-image:url(../images/math.png);
 }

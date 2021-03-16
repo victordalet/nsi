@@ -16,7 +16,7 @@ $total = count($fichier)
 			if ($id[1] == $_POST["mdp"])
 			{
 				setcookie("connecter", true, time()+1000000000)
-				header('Location: index.html');
+				header('Location: http://localhost/projet');
 			}
 		}
 		

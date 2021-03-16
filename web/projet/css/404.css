@@ -23,9 +23,12 @@ input
 {
 	  background-color: red;
 	  color: white;
+	  font-size: 160%;
 	  height: 40%;
+	  border : solid red 10px;
+	  border-radius: 10px;
 }
-.piece
+#piece
 {
 	width: 8%;
 	height: 5%;
