@@ -11,25 +11,27 @@
 	        <div id="cadretitre"><h1 id="titre"> le site de l'école </h1></div> <br>
 			<h3> descirption de l'école <h3> <br>
 			<br>
+			 <form  method="post" id="formulaire" action="specialites/page_type/page_type.php">
 				<section class="choix" id = "spe1">
 					<h2> spécialité scientifique </h2>
-					<input type="button" value="mathématiques" name ="math4" onclick="redirection(1);" class="index"> <br>
-					<input type="button" value="nsi" name ="nsi" onclick="redirection(2);" class="index"> <br>
-					<input type="button" value="math complementaire" name ="math3" onclick="redirection(3);" class="index"> <br>
-					<input type="button" value="Physique Chimie" name ="pc" onclick="redirection(4);" class="index"> <br>
-					<input type="button" value="Svt" name ="svt" onclick="redirection(5);" class="index"> 
+					<input type="submit" value="mathématiques" name="spe" onclick="redirection(1);" class="index"> <br>
+					<input type="submit" value="NSI" name ="spe" onclick="redirection(2);" class="index"> <br>
+					<input type="submit" value="math complementaire" name ="spe" onclick="redirection(3);" class="index"> <br>
+					<input type="submit" value="Physique Chimie" name ="spe" onclick="redirection(4);" class="index"> <br>
+					<input type="submit" value="SVT" name ="spe" onclick="redirection(5);" class="index"> 
 				</section>
 				<section class="choix" id = "spe2">
 					<h2> spécialité économique </h2>
-					<input type="button" value="ses" name ="ses" onclick="redirection(6);" class="index"> <br>
-					<input type="button" value="géopolitique" name ="geopo" onclick="redirection(7);" class="index"> 
+					<input type="submit" value="ses" name ="spe" onclick="redirection(6);" class="index"> <br>
+					<input type="submit" value="géopolitique" name ="spe" onclick="redirection(7);" class="index"> 
 				</section >
 				<section class="choix" id = "spe3">
 					<h2> spécialité littéraire </h2>
-					<input type="button" value="hlp" name ="hlp" onclick="redirection(8);" class="index"> <br>
-					<input type="button" value="anglais littérature" name ="anglais" onclick="redirection(9);" class="index"> <br>
-					<input type="button" value="espagnol littérature" name ="espagnol" onclick="redirection(10);" class="index"> 
+					<input type="submit" value="hlp" name ="spe" onclick="redirection(8);" class="index"> <br>
+					<input type="submit" value="anglais littérature" name ="spe" onclick="redirection(9);" class="index"> <br>
+					<input type="submit" value="espagnol littérature" name ="spe" onclick="redirection(10);" class="index"> 
 				</section>
+			</form>	
 
 	  
 	  </body>
