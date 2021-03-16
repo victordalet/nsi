@@ -1,0 +1,32 @@
+#perso
+{
+    width: 10%;
+    height:20%;
+}
+#logo404
+{
+	text-align: center;
+}
+#jeu
+{
+  border : 10px black solid;
+  border-radius: 10px ;
+  height: 180%;
+
+}
+h1
+{
+	text-align: center;
+	color: red;
+}
+input
+{
+	  background-color: red;
+	  color: white;
+	  height: 40%;
+}
+.piece
+{
+	width: 8%;
+	height: 5%;
+}

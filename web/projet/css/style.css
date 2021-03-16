@@ -40,28 +40,42 @@ h2
 	background-color : black;
 	
 }
-h1
+#cadretitre
 {
-	 position: fixed;
-	 background-color : #0073ff ;
+	width: 100%;
+	height: 10%;
+	position:fixed;
+	background-color: #0073ff;
+	border-radius:20px;
+	text-align: center;
+}
+h1
+{	
+	 border-left: 50%;
+	 border-right: 50%;
 	 color : black;
-	 border-radius : 20px orange;
 	 text-align : center;
 }
 #spe1  // pour aligner droit les différentes sections 
 {
 	text-align :center;
 	margin-left : 20%;
+	width: 20%;
+	height: 50%;
 }
 #spe2
 {
 	text-align :center;
 	margin-left : 40%;
+	width: 20%;
+	height: 50%;
 }
 #spe3
 {
 	text-align :center;
 	margin-left : 60%;
+	width: 20%;
+	height: 50%;
 }
 h3
 {
