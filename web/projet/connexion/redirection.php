@@ -9,21 +9,40 @@ $total = count($fichier)
 	</head>
 	<body>
 	<?php
-	for($i = 0; $i < $total; $i++) {
-		$id = explode("&$&", $fichier[$i], 2);
-		if ($id[0] == $_POST["email"])
+	$choix = $_POST["type"];
+	$nom = $_POST["email"];
+	$mdp = $_POST["mdp"];
+	$source = $POST["image"];
+	if ($source == "")
+	{
+		$source == "../images/profilebase.png";
+	}
+	if ($choix == "inscription")
+	{   
+	    $id_utilisateur = $id +1;
+		$s = (id_utilisateur($save,$source));
+		file_put_contents('saves.json', json_encode($s));
+		setcookie("connecter", $_POST["email"],$_POST["mdp"], time()+1000000000);
+		setcookie("photo",$source, time()+1000000000);
+		header('Location: http://localhost/projet');		
+	}
+	else	
+	{
+		$liste = file_get_contents('saves.json');
+		foreach( $liste as $value )
 		{
-			if ($id[1] == $_POST["mdp"])
-			{
-				setcookie("connecter", true, time()+1000000000)
+            if( $value == $nom && $mdp )
+			{ // rajouter la liste pour retrouver l'id
+				setcookie("connecter", $id, time()+1000000000);
+				setcookie("photo",$source, time()+1000000000);
 				header('Location: http://localhost/projet');
 			}
-		}
-		
-    // On affiche ligne par ligne le contenu du fichier
-    // avec la fonction nl2br pour ajouter les sauts de lignes
-    //echo nl2br($fichier[$i]);
-    }
+			else
+			{
+				header('Location: http://localhost/projet/connexion/connexion.php');
+			}
+		}	
+	}
 	?>
 
 	</body>

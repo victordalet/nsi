@@ -11,7 +11,7 @@
 	        <div id="cadretitre"><h1 id="titre"> le site de l'école <?php 
             if (isset($_COOKIE["connecter"]))
             {
-            	echo '<a href="http://localhost/projet/connexion/connexion.php"><input type="button" value="bienvenue" ></a>';
+            	echo '<a href="http://localhost/projet/connexion/profil.php"><input type="button" value="bienvenue" ></a>';
             }
             else
             {

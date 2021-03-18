@@ -10,9 +10,10 @@
 	<section class = "gen_descriptif">
 	<h2> inscrivez vous ! </h2>
 	<form method = "POST" action = "redirection.php">
-	<input type = "textarea" name = "email" placeholder = "email">
+	<input  name = "email" placeholder = "email">
+	<input  name = "image" placeholder = "email">
 	<input type = "password" name = "mdp" placeholder = "mot de passe">
-	<input type="submit" value = "connexion">
+	<input type="submit" name ="type" value = "inscription" >
 	</form>
 	</section>
 	</body>
