@@ -1,4 +1,4 @@
-!doctype HTML>
+<!doctype HTML>
 <html lang="fr">
 	<head>
 	    <title> envoie </title>
@@ -8,8 +8,11 @@
 	</head>
     <body>	
 		<?php
-		file_put_contents('messagerie.json', json_encode($_COOKIE["connecter"].$_POST["message"]));
-		header('Location: http://192.167.1.209/dalet/projet/messagerie/messagerie.php');	
+		$document = fopen("messagerie.json","c+");
+		fseek($document, filesize('messagerie.json'));
+		fwrite($document, $_COOKIE["connecter"].": ".$_POST["message"]."<br>"."\n" );
+		header('Location: http://localhost/projet/messagerie/messagerie.php');	
         ?>		
+        
 	</body>
 </html>	

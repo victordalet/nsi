@@ -16,141 +16,161 @@
 		if ($specialite == 'SVT')
 		{
 			echo'
-				<h1>La SVT</h1>
-				<section class="gen_descriptif"> 
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La SVT</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
 				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
+				</div>
+				<div class="spe">
 				<h2>les metiers</h2>
-				<div>blametier bla</div>
+			    </div>	
+			    </div class="spe">
 				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				</div>
 			';
 		}
 		if ($specialite == 'NSI')
 		{
 			echo'
-				<h1>La NSI</h1>
-				<section class="gen_descriptif"> 
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La NSI</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
 				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
+				</div>
+				<div class="spe">
 				<h2>les metiers</h2>
-				<div>blametier bla</div>
+			    </div>	
+			    </div class="spe">
 				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				</div>
 			';
 		}
 		if ($specialite == 'mathématiques')
 		{
 			echo'
-				<h1> Les mathématiques (spécialité 4h)</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Les Mathématiques</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'math complementaire')
 		{
 			echo'
-				<h1>Les Maths complémentaires</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Les Math Complémentaire </h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'Physique Chimie')
 		{
 			echo'
-				<h1>La physique Chimie</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La Physique Chimie</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'ses')
 		{
 			echo'
-				<h1>La SES</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La SES</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'géopolitique')
 		{
 			echo'
-				<h1>La géopolotique (truc de merde)</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La géopolitique</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'hlp')
 		{
 			echo'
-				<h1>Humanité littérature philosophie (C\'EST DE LA MERDE)</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Humanité littérature Phylosophie</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'anglais littérature')
 		{
 			echo'
-				<h1>anglais</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Anglais Littérature</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
 		if ($specialite == 'espagnol littérature')
 		{
 			echo'
-				<h1>espagnol</h1>
-				<section class="gen_descriptif"> 
-				<h2>description spécialité</h2>
-				<div>dans cette spécialité, vous allez travaillez blablabla</div>
-				<h2>les metiers</h2>
-				<div>blametier bla</div>
-				<h2>programme</h2>
-				<div>blabla programme</div>
-				</section>
+				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Espagnol Littérature</h1>
+				<br><br><br><br><br><br>
+				<div class="spe"> 
+				<h2>description spécialité :</h2>
+				</div>
+				<div class="spe">
+				<h2>Les metiers : </h2>
+			    </div>	
+			    <div class="spe">
+				<h2>Programme : </h2>
+				</div>
 			';
 		}
          		

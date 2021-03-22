@@ -1,7 +1,7 @@
 #perso
 {
-    width: 10%;
-    height:20%;
+    width: 90px;
+    height: 70px;
 }
 #logo404
 {
@@ -10,8 +10,7 @@
 #jeu
 {
   border : 10px black solid;
-  border-radius: 10px ;
-  height: 180%;
+  border-radius: 10px;
 
 }
 h1
@@ -30,6 +29,18 @@ input
 }
 #piece
 {
-	width: 8%;
-	height: 5%;
+	width: 20px;
+	height: 30px;
+	margin-left: 60px;
+}
+#boutonjouer
+{
+   margin-left: 47%;
+}
+#ennemie
+{
+	width:5%;
+	height: auto;
+	position: absolute;
+	margin-left: 30%;
 }

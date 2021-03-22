@@ -1,0 +1,64 @@
+h1
+{
+	color : brown;
+	font-size: 250%;
+	text-align: center;
+}
+input
+{
+	background-color: #BCB4B2;
+	width: 50%;
+	height: 50px;
+	border-top: 10%;
+}	
+div#cadre
+{
+   border: solid 5px grey;
+   text-align: center;
+   width: 50%;
+   height: 450px;
+   border-left: 1000%;
+   margin: 0 auto;
+}
+div
+{
+   text-align: center;
+}
+
+#bouton
+{
+	background-color: #88635A;
+	border-radius: 20px;
+	font-size: 200%;
+}
+img
+{
+	border: solid 2px #88635A;
+	background-color: #88635A;
+	width: 5%;
+
+}
+section
+{
+	width: 50%;
+	border: solid 2px black;
+	margin: 0 auto;	
+	height: 300px;
+}
+#autre
+{
+	background-color: #F09006;
+	border-radius: 20px;
+	font-size: 150%;
+	text-align: center;
+	width: 25%;
+}
+#insrciption
+{
+   border: solid 5px grey;
+   text-align: center;
+   width: 50%;
+   height: 450px;
+   border-left: 1000%;
+   margin: 0 auto;
+}

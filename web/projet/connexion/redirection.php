@@ -24,7 +24,17 @@ $total = count($fichier)
 		file_put_contents('saves.json', json_encode($s));
 		setcookie("connecter", $_POST["email"],$_POST["mdp"], time()+1000000000);
 		setcookie("photo",$source, time()+1000000000);
-		header('Location: http://localhost/projet');		
+		header('Location: http://localhost/projet');	
+		// envoie de mail
+		ini_set( 'display_errors', 1 );
+	    error_reporting( E_ALL );
+	    $from = "stephane.dalet.sd@gmail.Com";
+	    $subject = "Bienvenue";
+	    $message = "Merci de vous êtes inscrit.";
+	    $headers = "De :" . $from;
+	    mail($nom,$subject,$message, $headers);
+	    echo "Un mail vous à été envoyé.";	
+	    //
 	}
 	else	
 	{
@@ -33,7 +43,7 @@ $total = count($fichier)
 		{
             if( $value == $nom && $mdp )
 			{ // rajouter la liste pour retrouver l'id
-				setcookie("connecter", $id, time()+1000000000);
+				setcookie("connecter", $nom, time()+1000000000);
 				setcookie("photo",$source, time()+1000000000);
 				header('Location: http://localhost/projet');
 			}
