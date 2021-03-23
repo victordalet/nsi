@@ -2,22 +2,24 @@
 <html lang="fr">
 	<head>
 		<title> connexion </title>
-		<link rel="stylesheet" href="../css/connexion.css"/>
+		<link rel="stylesheet" href="../css/style.css"/>
 		<script type="text/javascript" src="/"></script>
 		<link rel="icon" type="image/png" href="../images/logo.png" /> <!-- logo à coté du titre-->
 	</head>
-	<div>
-	<div id="cadre">
-	<h1> connectez vous </h1>
+	<body>
+			<h1> connectez vous ! </h1><br><br><br><br><br><br>
+	<section>
 	<form method = "POST" action = "redirection.php">
-	<label for="mail"><img alt="logo mail" src="../images/mail.png"></label>
-	<input id="mail" type = "textarea" name = "email" placeholder = "email"> <br>
-	<label for="mdp"><img alt="logo mail" src="../images/mail.png"></label>
-	<input id="mdp" type = "password" name = "mdp" placeholder = "mot de passebr"> <br><br>
-	<input type="submit" id="bouton" value = "connexion"><br><br>
-	<a href="http://localhost/projet/connexion/inscription.php"><input type="button" id="autre" value="s'inscrire"></a>
+		<br><br><br><br>
+		<input class="formulaire" type="textarea" name="identifiant" placeholder="identifiant"><br>
+		
+		<input class="formulaire" type = "textarea" name = "email" placeholder = "email"><br>
+
+		<input class="formulaire" type = "password" name = "mdp" placeholder = "mot de passe"><br>
+
+		<input class="login" type="submit" value = "connexion"><br>
+		<a href="http://localhost/projet/connexion/inscription.php"><input type="button" class="bouton" value="créer un compte">
 	</form>
-    </div>
-    </div>
+	</section>
 	</body>
 </html>

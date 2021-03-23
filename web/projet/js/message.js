@@ -1,8 +1,8 @@
-function sauvegarde()
+function envoieTouche()
 {
-	var a = document.getElementById("message").value;
-	var requestURL = "../messagerie/meffasgerie.json";
-	var request = new XMLHttpRequest();
-	request.open('GET', requestURL);
-	
+    var event = window.event || touche;
+     if (event.keyCode == 13 ) // entrer
+     {
+     	document.getElementById("envoie"). submit();
+     }
 }

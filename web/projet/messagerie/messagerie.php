@@ -12,13 +12,13 @@
 			// header("Refresh: $delai;url=$url");
 	    // ?>
 	</head>
-	<body>
+	 <body onkeydown="  envoieTouche(event);">
+
 	    <h1><a href="http://localhost/projet"><img alt="logo" id="logocontacte" src="../images/logo.png"></a> Contacte :  </h1>
 	    <br><br><br><br><br>
 	<div id="messageriecadre">
 		<section style="overflow-y:scroll;">
         <?php
-		setcookie("connecter","victor",time()+360000000);
 		if (isset($_COOKIE["connecter"]))
 		{
 		$text = file_get_contents('messagerie.json');
@@ -30,7 +30,7 @@
 		}
 		?>
 	</section>
-		<form method = "POST" action = "envoie.php">
+		<form method = "POST" id="envoie" action = "envoie.php">
 		     <br><textarea id="message" name="message" placeholder="écriver votre message"></textarea> <br>
 			 <button id="send" type="submit"><img alt="envoie" src="../images/send.png"></button>
 		</form>	 

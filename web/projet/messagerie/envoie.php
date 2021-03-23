@@ -8,9 +8,10 @@
 	</head>
     <body>	
 		<?php
+		$date = date("(d.m.y ; H:i) : ");
 		$document = fopen("messagerie.json","c+");
 		fseek($document, filesize('messagerie.json'));
-		fwrite($document, $_COOKIE["connecter"].": ".$_POST["message"]."<br>"."\n" );
+		fwrite($document, '<span class="nom">'.$_COOKIE["nom"].'</span>'.'<span class="date">'.$date.'</span>'.$_POST["message"]."<br>"."\n" );
 		header('Location: http://localhost/projet/messagerie/messagerie.php');	
         ?>		
         

@@ -12,7 +12,7 @@
 	  	     <?php 
             if (isset($_COOKIE["connecter"]))
             {
-            	echo '<a href="http://localhost/projet/connexion/profil.php"><input type="button" value="bienvenue" ></a>';
+            	echo '<a href="http://localhost/projet/connexion/supprimmer.php"><input type="button" class="inscription" value="Se Déconnecter" ></a>';
             }
             else
             {
@@ -25,25 +25,31 @@
 			 <form  method="post" id="formulaire" action="specialites/page_type/page_spe.php">
 				<div class="spe">
 					<h2> spécialité scientifique </h2>
-					<button class="imagespe"onmouseover="affiche(1);" onmouseout="noaffiche(1);" type="submit" value="mathématiques" name="spe"><img id="math" alt="math" src="images/spe/math.png"><input type="button" value="math" id="textmath"class="text"></button> 
+					<button class="imagespe" type="submit" value="mathématiques" name="spe"><img id="math" alt="math" src="images/spe/math4.png"><h3 class="text">Mathématiques</h3> </button>
 
-					<button class="imagespe" type="submit" value="NSI" name="spe"><img alt="nsi" src="images/spe/nsi.png"></button> 
-					<button class="imagespe" type="submit" value="math complementaire" name="spe"><img alt="math complementaire" src="images/spe/math.png"></button> 
-					<button class="imagespe" type="submit" value="Physique Chimie" name="spe"><img alt="pc" src="images/spe/pc.png"></button> 
-					<button class="imagespe" type="submit" value="SVT" name="spe"><img alt="svt" src="images/spe/svt.png"></button> 
+					<button class="imagespe" type="submit" value="NSI" name="spe"><img alt="nsi" src="images/spe/nsi.png"><h3 class="text">NSI</h3></button> 
+
+					<button class="imagespe" type="submit" value="math complementaire" name="spe"><img alt="math complementaire" src="images/spe/math.png"><h3 class="text">Math Compl</h3></button> 
+
+					<button class="imagespe" type="submit" value="Physique Chimie" name="spe"><img alt="pc" src="images/spe/pc.png"><h3 class="text">Physique Chimie</h3></button> 
+
+					<button class="imagespe" type="submit" value="SVT" name="spe"><img alt="svt" src="images/spe/svt.png"><h3 class="text">SVT</h3></button> 
 				</div>
 				<br>
 				<div class="spe">
 					<h2> spécialité économique </h2>
-					<button class="imagespe" type="submit" value="ses" name="spe"><img alt="ses" src="images/spe/ses.png"></button> 
-					<button class="imagespe" type="submit" value="géopolitique" name="spe"><img alt="geopo" src="images/spe/geo.png"></button>  
+					<button class="imagespe" type="submit" value="ses" name="spe"><img alt="ses" src="images/spe/ses.png"><h3 class="text">SES</h3></button>
+
+					<button class="imagespe" type="submit" value="géopolitique" name="spe"><img alt="geopo" src="images/spe/geo.png"><h3 class="text">Géopolitique</h3></button>  
 				</div>
 				<br>
 				<div class="spe">
 					<h2> spécialité littéraire </h2>
-					<button class="imagespe" type="submit" value="hlp" name="spe"><img alt="hlp" src="images/spe/hlp.png"></button>  
-					<button class="imagespe" type="submit" value="anglais littérature" name="spe"><img alt="anglais" src="images/spe/anglais.png"></button>  
-					<button class="imagespe" type="submit" value="espagnol littérature" name="spe"><img alt="espagnol" src="images/spe/espagnol.png"></button>  
+					<button class="imagespe" type="submit" value="hlp" name="spe"><img alt="hlp" src="images/spe/hlp.png"><h3 class="text">HLP</h3></button>
+
+					<button class="imagespe" type="submit" value="anglais littérature" name="spe"><img alt="anglais" src="images/spe/anglais.png"><h3 class="text">Anlgais</h3></button>  
+
+					<button class="imagespe" type="submit" value="espagnol littérature" name="spe"><img alt="espagnol" src="images/spe/espagnol.png"><h3 class="text">Espagnol</h3></button>  
 				</div>
 			</form>	
 			<br>
