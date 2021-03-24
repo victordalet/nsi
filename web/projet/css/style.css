@@ -1,9 +1,9 @@
-@font-face
+@font-face /*rajout d'une font*/
 {
   font-family: my_font;
   src: url("../font/titre.otf");
 }
-h1
+h1 /*Pour les titres*/
 {
 	font-family: my_font;
 	color : black;
@@ -18,7 +18,7 @@ h1
 
 }
 
-.inscription
+.inscription /*bouton inscription et connexion et déconnexion*/
 {
 	background-color: #107DD4;
     color: black;
@@ -34,11 +34,11 @@ h1
 	background-color: #3EA4F6;
 	transition-delay: 150ms;
 }
-body
+body /*l'arrière plan*/
 {
 	background-color: #1F3886;
 }
-.spe
+.spe /*les cadres pour les choix de spécialités*/
 {
 	font-family: my_font;
 	border : solid 2px #E0D0D0;
@@ -49,7 +49,7 @@ body
 	text-align: center;
 
 }
-.imagespe
+.imagespe /*redimension des images  pour les choix des spé*/
 {
 	background-color: #1F3886;
 	border: solid 2px #E0D0D0;
@@ -63,16 +63,16 @@ body
 	background-color: #3EA4F6;
 
 }
-img
+img /*redimension images*/
 {
 	width: 70%;
 }
-footer
+footer /*fin de page pour les crédits*/
 {
 	color: white;
 	text-align: center;
 }
-#messagerie
+#messagerie /*le bouton pour acceder à la messagerie*/
 {
 	width: 4%;
 	margin-left: 50%;
@@ -85,13 +85,13 @@ footer
 {
 	border-radius: 25px;
 }
-.text
+.text /*le texte des options*/
 {
 	font-size: 100%;
 	font-family: my_font;
 	color: #D7A012;
 }
-section
+section /*les cadre pour les descriptions des spécialités*/
 {
 	background-color: #E0D0D0;
 	width: 50%;
@@ -100,7 +100,7 @@ section
 
 
 }
-.login
+.login /*le bouton pour se connnecter*/
 {
 	width: 60%;
 	height: 40px;
@@ -114,12 +114,12 @@ section
 	background-color: #62A6DF;
 }
 
-#messageriecadre
+#messageriecadre/*supplément */
 {
 	text-align: center;
 }
 
-#send
+#send /*le bouton d'envoie de message*/
 {
 	width: 4%;
 	border-radius: 30px;
@@ -129,22 +129,22 @@ section
 {
 	width: 4.5%;
 }
-.logoindex
+.logoindex /*redimension du bouton d'acceuille*/
 {
 	width: 4%;
 }
 
-.nom
+.nom /*police pour la messagerie*/
 {
 	color:#1F3886 ;
 	font-size: 150%;
 }
-.date
+.date /*police pour la messagerie*/
 {
 	color: grey;
 	font-size: 100%;
 }
-.formulaire
+.formulaire 
 {
 	width: 70%;
 	height: 40px;
@@ -164,7 +164,7 @@ section
 {
 	background-color: #FFC264;
 }
-h6
+h6 /*ecriture text descriptions spe*/
 {
 	font-size: 500%;
 	font-family: my_font;
@@ -189,7 +189,7 @@ h6
 {
 	text-align: center;
 }
-#message
+#message /*textarea pour écrire son message dans la messagerie*/
 {
 	width: 20%;
     border : solid red 10px;

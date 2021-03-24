@@ -1,13 +1,13 @@
-#perso
+#perso /*dimension du personnage*/
 {
     width: 90px;
     height: 70px;
 }
-#logo404
+#logo404 /*pour le logo */
 {
 	text-align: center;
 }
-#jeu
+#jeu /*le cadre ou il y a le jeu*/
 {
   border : 10px black solid;
   border-radius: 10px;
@@ -21,7 +21,7 @@ h1
 	text-align: center;
 	color: red;
 }
-input
+input /*le bouton joeur et de redirection*/
 {
 	  background-color: red;
 	  color: white;
@@ -36,7 +36,7 @@ input:hover
 	background-color: #6D0404;
 	border : solid #6D0404 10px;
 }
-#piece
+#piece /*redimension de la piece*/
 {
 	width: 20px;
 	height: 30px;
@@ -47,7 +47,7 @@ input:hover
 {
    margin-left: 47%;
 }
-#ennemie
+#ennemie /*redimension des ennemie*/
 {
 	width:5%;
 	height: auto;
