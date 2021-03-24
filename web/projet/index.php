@@ -3,7 +3,6 @@
       <head> 
 	       <title> projet ecole  </title> <!--le titre de la page -->
 		   <link rel="stylesheet" href="css/style.css"> <!-- on imparte le css -->
-		   <script src="js/jsindex.js"></script> <!-- on import le js -->
 		   <link rel="icon" type="image/png" href="images/logo.png" /> <!-- logo à coté du titre-->
 	  </head>
 	        
@@ -11,11 +10,11 @@
 	  	    <h1 id="titre"><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="images/acceuil.png"></a> NOTRE DAME DE LA PROVIDENCE
 	  	     <?php 
 
-            if (isset($_COOKIE["connecter"]))
+            if (isset($_COOKIE["connecter"])) //si il y a un cookie on propose de se déconnecter
             {
             	echo '<a href="http://localhost/projet/connexion/supprimmer.php"><input type="button" class="inscription" value="Se Déconnecter" ></a>';
             }
-            else
+            else // sinon on propose de se connecter ou de s'inscrire
             {
             	echo '<a href="http://localhost/projet/connexion/connexion.php"><input type="button" class="inscription" value="se connecter"></a><a href="http://localhost/projet/connexion/inscription.php"><input type="button" class="inscription" value="inscription" ></a>';
             }
@@ -25,7 +24,7 @@
 			<br>
 			 <form  method="post" id="formulaire" action="specialites/page_type/page_spe.php">
 				<div class="spe">
-					<h2> spécialité scientifique </h2>
+					<h2> spécialité scientifique </h2> <!--plusieures div avec les spe -->
 					<button class="imagespe" type="submit" value="mathématiques" name="spe"><img id="math" alt="math" src="images/spe/math4.png"><h3 class="text">Mathématiques</h3> </button>
 
 					<button class="imagespe" type="submit" value="NSI" name="spe"><img alt="nsi" src="images/spe/nsi.png"><h3 class="text">NSI</h3></button> 
