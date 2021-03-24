@@ -16,7 +16,7 @@
 		if ($specialite == 'SVT')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La SVT</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>La SVT</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -35,7 +35,7 @@
 		if ($specialite == 'NSI')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La NSI</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>La NSI</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité : </h2>
@@ -56,7 +56,7 @@ La spécialité Numérique et sciences informatiques vous permet de comprendre l
 		if ($specialite == 'mathématiques')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Les Mathématiques</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>Les Mathématiques</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -75,7 +75,7 @@ La spécialité Numérique et sciences informatiques vous permet de comprendre l
 		if ($specialite == 'math complementaire')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Les Math Complémentaire </h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>Les Math Complémentaire </h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -94,7 +94,7 @@ La spécialité Numérique et sciences informatiques vous permet de comprendre l
 		if ($specialite == 'Physique Chimie')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La Physique Chimie</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>La Physique Chimie</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -114,7 +114,7 @@ qui conduisent à formuler des lois, afin d expliquer et de prévoir divers phé
 		if ($specialite == 'ses')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La SES</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>La SES</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -137,7 +137,7 @@ mathématiques…</h5>
 		if ($specialite == 'géopolitique')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>La géopolitique</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>La géopolitique</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -162,7 +162,7 @@ Analyser les relations entre Etats et religions (du monde médiéval aux enjeux 
 		if ($specialite == 'hlp')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Humanité littérature Phylosophie</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>Humanité littérature Phylosophie</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -181,7 +181,7 @@ Analyser les relations entre Etats et religions (du monde médiéval aux enjeux 
 		if ($specialite == 'anglais littérature')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Anglais Littérature</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>Anglais Littérature</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>
@@ -203,7 +203,7 @@ Analyser les relations entre Etats et religions (du monde médiéval aux enjeux 
 		if ($specialite == 'espagnol littérature')
 		{
 			echo'
-				<h1><a href="http://localhost/projet"><img alt="logo" id="logospe" src="../../images/logo.png"></a>Espagnol Littérature</h1>
+				<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../../images/acceuil.png"></a>Espagnol Littérature</h1>
 				<br><br><br><br><br><br>
 				<div class="spe"> 
 				<h2>Description spécialité :</h2>

@@ -8,8 +8,9 @@
 	  </head>
 	        
 	  <body>
-	  	    <h1 id="titre"><a href="http://localhost/projet"><img alt="logo" id="logoindex" src="images/logo.png"></a> NOTRE DAME DE LA PROVIDENCE
+	  	    <h1 id="titre"><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="images/acceuil.png"></a> NOTRE DAME DE LA PROVIDENCE
 	  	     <?php 
+
             if (isset($_COOKIE["connecter"]))
             {
             	echo '<a href="http://localhost/projet/connexion/supprimmer.php"><input type="button" class="inscription" value="Se Déconnecter" ></a>';

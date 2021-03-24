@@ -7,9 +7,15 @@
 	  <body>
 
 	  	<?php
-	  	  unset($_COOKIE['connecter']);
-	  	  unset($_COOKIE['nom']);
-	  	  header('Location: http://localhost/projet/' )
+	  	if (isset($_COOKIE["connecter"]))
+        {
+		setcookie("nom","",time()-3600,"/");
+	    setcookie("connecter","",time()-5416,"/");
+	  	header('Location: http://localhost/projet/' );
+	    }
+	    else{
+	    	print("bug");
+	    }
 	  	?>  
 	  </body>
 </html>	  

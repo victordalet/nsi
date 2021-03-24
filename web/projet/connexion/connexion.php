@@ -7,7 +7,7 @@
 		<link rel="icon" type="image/png" href="../images/logo.png" /> <!-- logo à coté du titre-->
 	</head>
 	<body>
-			<h1> connectez vous ! </h1><br><br><br><br><br><br>
+			<h1> <a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../images/acceuil.png"></a>Connectez vous ! </h1><br><br><br><br><br><br>
 	<section>
 	<form method = "POST" action = "redirection.php">
 		<br><br><br><br>

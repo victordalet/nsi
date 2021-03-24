@@ -11,6 +11,9 @@
 {
   border : 10px black solid;
   border-radius: 10px;
+  width: 30%;
+  height: 200px;
+  margin:0 auto;
 
 }
 h1
@@ -50,4 +53,11 @@ input:hover
 	height: auto;
 	position: relative;
 	margin-left: 30%;
+}
+#afficherpoint
+{
+	font-size: 90%;
+	border: 0px;
+	background-color: white;
+	color: black;
 }

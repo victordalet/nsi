@@ -7,7 +7,7 @@
 		<link rel="icon" type="image/png" href="../images/logo.png" /> <!-- logo à coté du titre-->
 	</head>
 	<body>
-		<h1> Inscrivez vous ! </h1>
+		<h1><a href="http://localhost/projet"><img alt="logo" class="logoindex" src="../images/acceuil.png"></a> Inscrivez vous ! </h1>
 		<br><br><br><br><br><br>
 		<section ><br><br><br><br>
 		<form method = "POST" action = "redirection_inscription.php">
