@@ -15,29 +15,29 @@ def pictures(width,height,bin_position):
     global first_rectangle
     first_rectangle = first.get_rect()
 
-    global book1
-    book1  = pygame.image.load("./assets/picture/book1.jpg")
-    book1 = pygame.transform.smoothscale(book1, (int(width/2),height))
-    book1 = book1.convert_alpha()
-    global book1_rectangle
-    book1_rectangle = book1.get_rect()
-    book1_rectangle.center = (bin_position)
+    global exemple1glouton
+    exemple1glouton  = pygame.image.load("./assets/picture/exemple1glouton.png")
+    exemple1glouton = pygame.transform.smoothscale(exemple1glouton, (width, height))
+    exemple1glouton = exemple1glouton.convert_alpha()
+    global exemple1glouton_rectangle
+    exemple1glouton_rectangle = exemple1glouton.get_rect()
+    exemple1glouton_rectangle.center = (bin_position)
 
-    global book2
-    book2  = pygame.image.load("./assets/picture/book2.jpg")
-    book2 = pygame.transform.smoothscale(book2, (int(width/2),height))
-    book2 = book2.convert_alpha()
-    global book2_rectangle
-    book2_rectangle = book2.get_rect()
-    book2_rectangle.center = (bin_position)
+    global exemple1trad
+    exemple1trad  = pygame.image.load("./assets/picture/exemple1trad.png")
+    exemple1trad = pygame.transform.smoothscale(exemple1trad, (width, height))
+    exemple1trad = exemple1trad.convert_alpha()
+    global exemple1trad_rectangle
+    exemple1trad_rectangle = exemple1trad.get_rect()
+    exemple1trad_rectangle.center = (bin_position)
 
-    global question
-    question  = pygame.image.load("./assets/picture/question.jpg")
-    question = pygame.transform.smoothscale(question, (int(width),height))
-    question = question.convert_alpha()
-    global question_rectangle
-    question_rectangle = question.get_rect()
-    question_rectangle.center = (bin_position)
+    global exemple2
+    exemple2  = pygame.image.load("./assets/picture/exemple2.png")
+    exemple2 = pygame.transform.smoothscale(exemple2, (width, height))
+    exemple2 = exemple2.convert_alpha()
+    global exemple2_rectangle
+    exemple2_rectangle = exemple2.get_rect()
+    exemple2_rectangle.center = (width/2,-2*height)
 
     global souris
     souris  = pygame.image.load("./assets/picture/souris.png")
@@ -47,21 +47,21 @@ def pictures(width,height,bin_position):
     souris_rectangle = souris.get_rect()
     souris_rectangle.center = (pygame.mouse.get_pos())
 
-    global perso1
-    perso1  = pygame.image.load("./assets/picture/perso1.png")
-    perso1 = pygame.transform.smoothscale(perso1, (200,200))
-    perso1 = perso1.convert_alpha()
-    global perso1_rectangle
-    perso1_rectangle = perso1.get_rect()
-    perso1_rectangle.center = (bin_position)
+    global memoire
+    memoire  = pygame.image.load("./assets/picture/memoire.png")
+    memoire = pygame.transform.smoothscale(memoire, (int(width/2),int(height/2)))
+    memoire = memoire.convert_alpha()
+    global memoire_rectangle
+    memoire_rectangle = memoire.get_rect()
+    memoire_rectangle.center = (width/2,-height)
 
-    global perso2
-    perso2  = pygame.image.load("./assets/picture/perso2.png")
-    perso2 = pygame.transform.smoothscale(perso2, (200, 200))
-    perso2 = perso2.convert_alpha()
-    global perso2_rectangle
-    perso2_rectangle = perso2.get_rect()
-    perso2_rectangle.center = (bin_position)
+    global reseau_dic
+    reseau_dic  = pygame.image.load("./assets/picture/reseau_dic.png")
+    reseau_dic = pygame.transform.smoothscale(reseau_dic, (width,height))
+    reseau_dic = reseau_dic.convert_alpha()
+    global reseau_dic_rectangle
+    reseau_dic_rectangle = reseau_dic.get_rect()
+    reseau_dic_rectangle.center = (bin_position)
 
     global fin
     fin  = pygame.image.load("./assets/picture/fin.jpg")
@@ -71,34 +71,96 @@ def pictures(width,height,bin_position):
     fin_rectangle = fin.get_rect()
     fin_rectangle.center = (bin_position)
 
-    global livre
-    livre = pygame.image.load("./assets/picture/livre.jpg")
-    livre = pygame.transform.smoothscale(livre, (int(width/2), int(height)))
-    livre= livre.convert_alpha()
-    global livre_rectangle
-    livre_rectangle = livre.get_rect()
-    livre_rectangle.center = (bin_position)
+    global reseau_trad
+    reseau_trad  = pygame.image.load("./assets/picture/reseau_trad.png")
+    reseau_trad = pygame.transform.smoothscale(reseau_trad, (width, height))
+    reseau_trad = reseau_trad.convert_alpha()
+    global reseau_trad_rectangle
+    reseau_trad_rectangle = reseau_trad.get_rect()
+    reseau_trad_rectangle.center = (bin_position)
 
-    global text2
-    text2 = pygame.image.load("./assets/picture/text2.png")
-    text2 = pygame.transform.smoothscale(text2, (700, int(height/2+100)))
-    text2= text2.convert_alpha()
-    global text2_rectangle
-    text2_rectangle = text2.get_rect()
-    text2_rectangle.center = (bin_position)
+    global reseau_glouton
+    reseau_glouton  = pygame.image.load("./assets/picture/reseau_glouton.png")
+    reseau_glouton = pygame.transform.smoothscale(reseau_glouton, (width, height))
+    reseau_glouton = reseau_glouton.convert_alpha()
+    global reseau_glouton_rectangle
+    reseau_glouton_rectangle = reseau_glouton.get_rect()
+    reseau_glouton_rectangle.center = (bin_position)
 
-    global text1
-    text1 = pygame.image.load("./assets/picture/text1.png")
-    text1 = pygame.transform.smoothscale(text1, (700, int(height/2+100)))
-    text1= text1.convert_alpha()
-    global text1_rectangle
-    text1_rectangle = text1.get_rect()
-    text1_rectangle.center = (bin_position)
+    global reseau_resultat
+    reseau_resultat  = pygame.image.load("./assets/picture/reseau_resultat.png")
+    reseau_resultat = pygame.transform.smoothscale(reseau_resultat, (width, 200))
+    reseau_resultat = reseau_resultat.convert_alpha()
+    global reseau_resultat_rectangle
+    reseau_resultat_rectangle = reseau_resultat.get_rect()
+    reseau_resultat_rectangle.center = (bin_position)
 
-    list_picture = [first,book1,book2,question,souris,perso1,perso2,fin,livre,text2,text1]
-    list_rect = [first_rectangle,book1_rectangle,book2_rectangle,question_rectangle,souris_rectangle,perso1_rectangle,perso2_rectangle,fin_rectangle,livre_rectangle,
-                 text2_rectangle,text1_rectangle]
-    return list_picture,list_rect
+    global arbre
+    arbre = pygame.image.load("./assets/picture/arbre.png")
+    arbre = pygame.transform.smoothscale(arbre, (int(width/2),int(height/2)))
+    arbre = arbre.convert_alpha()
+    global arbre_rectangle
+    arbre_rectangle = arbre.get_rect()
+    arbre_rectangle.center = (bin_position)
+
+    global compression_trad
+    compression_trad = pygame.image.load("./assets/picture/compression_trad.png")
+    compression_trad = pygame.transform.smoothscale(compression_trad, (width, height))
+    compression_trad = compression_trad.convert_alpha()
+    global compression_trad_rectangle
+    compression_trad_rectangle = compression_trad.get_rect()
+    compression_trad_rectangle.center = (bin_position)
+
+    global compression_glouton
+    compression_glouton = pygame.image.load("./assets/picture/compression_glouton.png")
+    compression_glouton = pygame.transform.smoothscale(compression_glouton, (width, height))
+    compression_glouton = compression_glouton.convert_alpha()
+    global compression_glouton_rectangle
+    compression_glouton_rectangle = compression_glouton.get_rect()
+    compression_glouton_rectangle.center = (bin_position)
+
+    global compression_resultat
+    compression_resultat = pygame.image.load("./assets/picture/compression_resultat.png")
+    compression_resultat = pygame.transform.smoothscale(compression_resultat, (width, 200))
+    compression_resultat = compression_resultat.convert_alpha()
+    global compression_resultat_rectangle
+    compression_resultat_rectangle = compression_resultat.get_rect()
+    compression_resultat_rectangle.center = (bin_position)
+
+    global go
+    go = pygame.image.load("./assets/picture/go.png")
+    go = pygame.transform.smoothscale(go, (30,30))
+    go = go.convert_alpha()
+    global go_rectangle
+    go_rectangle = go.get_rect()
+    go_rectangle.center = (bin_position)
+
+    global trad
+    trad = pygame.image.load("./assets/picture/trad.png")
+    trad = trad.convert_alpha()
+    global trad_rectangle
+    trad_rectangle = trad.get_rect()
+    trad_rectangle.center = (width*1/5,-height)
+
+    global glouton
+    glouton = pygame.image.load("./assets/picture/glouton.png")
+    glouton = glouton.convert_alpha()
+    global glouton_rectangle
+    glouton_rectangle = glouton.get_rect()
+    glouton_rectangle.center = (width*4/5,-height)
+
+    dict_picture = {"first":first,"exemple1glouton":exemple1glouton,"exemple1trad":exemple1trad,"exemple2":exemple2,"souris":souris," memoire": memoire,"reseau_dic":reseau_dic,
+                    "fin":fin,"reseau_trad":reseau_trad,"reseau_glouton":reseau_glouton,"reseau_resultat":reseau_resultat,"arbre":arbre,"compression_trad":compression_trad,
+                    "compression_glouton":compression_glouton,"compression_resultat":compression_resultat,"go":go,"trad":trad,"glouton":glouton}
+
+    dict_rect = {"first_rectangle":first_rectangle,"exemple1glouton_rectangle":exemple1glouton_rectangle,"exemple1trad_rectangle":exemple1trad_rectangle,
+                 "exemple2_rectangle":exemple2_rectangle,"souris_rectangle":souris_rectangle,"memoire_rectangle": memoire_rectangle,"reseau_dic_rectangle":reseau_dic_rectangle,
+                    "fin_rectangle":fin_rectangle,"reseau_trad_rectangle":reseau_trad_rectangle,"reseau_glouton_rectangle":reseau_glouton_rectangle,
+                 "reseau_resultat_rectangle":reseau_resultat_rectangle,"arbre_rectangle":arbre_rectangle,"compression_trad_rectangle":compression_trad_rectangle,
+                    "compression_glouton_rectangle":compression_glouton_rectangle,"compression_resultat_rectangle":compression_resultat_rectangle,"go_rectangle":go_rectangle,
+                 "trad_rectangle":trad_rectangle,"glouton_rectangle":glouton_rectangle}
+
+    return dict_picture,dict_rect
 
 def font():
     """
@@ -121,16 +183,24 @@ def screen_update_picture(screen):
     :return:
     """
     screen.blit(first, first_rectangle)
-    screen.blit(book1,book1_rectangle)
-    screen.blit(book2,book2_rectangle)
-    screen.blit(question,question_rectangle)
-    screen.blit(perso1,perso1_rectangle)
-    screen.blit(perso2,perso2_rectangle)
-    screen.blit(livre,livre_rectangle)
-    screen.blit(text2,text2_rectangle)
-    screen.blit(text1,text1_rectangle)
+    screen.blit(trad,trad_rectangle)
+    screen.blit(glouton,glouton_rectangle)
+    screen.blit(exemple1glouton,exemple1glouton_rectangle)
+    screen.blit(exemple1trad,exemple1trad_rectangle)
+    screen.blit(exemple2,exemple2_rectangle)
+    screen.blit(memoire,memoire_rectangle)
+    screen.blit(reseau_dic,reseau_dic_rectangle)
+    screen.blit(reseau_trad,reseau_trad_rectangle)
+    screen.blit(reseau_glouton,reseau_glouton_rectangle)
+    screen.blit(reseau_resultat,reseau_resultat_rectangle)
+    screen.blit(arbre,arbre_rectangle)
+    screen.blit(compression_trad,compression_trad_rectangle)
+    screen.blit(compression_glouton,compression_glouton_rectangle)
+    screen.blit(compression_resultat,compression_resultat_rectangle)
     screen.blit(souris, souris_rectangle)
     screen.blit(fin,fin_rectangle)
+    screen.blit(go,go_rectangle)
+
 
 
 def screen_update_label(screen,red,lecture,reading_speed,slides,height,black,white,width):
@@ -149,69 +219,41 @@ def screen_update_label(screen,red,lecture,reading_speed,slides,height,black,whi
     """
     slow_sentence_title = ""
     if slides == 0:
-        sentence_title = "Parcours : Imagination et Pensée"
+        sentence_title = "Algorithme Glouton"
         if lecture == True:
             for i in range(len(sentence_title)):
                 souris_rectangle.center = (999999, 99999)
                 slow_sentence_title += sentence_title[i]
-                label_title = title.render( "{}".format(slow_sentence_title), 1, red)
-                screen.blit(label_title, (250,20))
+                label_title = title.render("{}".format(slow_sentence_title), 1, red)
+                screen.blit(label_title, (400,20))
                 time.sleep(reading_speed)
-                label_name = little.render("Victor Dalet 1e3".format(sentence_title), 1, white)
+                label_name = little.render("Victor Dalet  /  Ambroise Jaquemet-Ramirez Vega  1e3", 1, white)
                 screen.blit(label_name, (50, height - 100))
                 pygame.display.flip()
             lecture = False
         else :
             label_title = title.render("{}".format(sentence_title), 1, red)
-            screen.blit(label_title, (250, 20))
-            label_name = little.render("Victor Dalet 1e3".format(sentence_title), 1, white)
+            screen.blit(label_title, (400, 20))
+            label_name = little.render("Victor Dalet  /  Ambroise Jaquemet-Ramirez Vega  1e3", 1, white)
             screen.blit(label_name, (50, height - 100))
 
-    elif slides == 4:
-        problematic1 = "Quelle (s) figure(s) du sauvage nous est présentée dans ces textes ?"
-        problematic2 = "Comment la solitude est-elle mise en avant dans ces textes ? "
-        problematic3 = "Quel regard sur l’autre et sur l’ailleurs ces auteurs mettent-ils en avant ? "
+    if slides == 4:
+        sentence_title = "Codage de Huffman"
         if lecture == True:
-            label_pb = title.render("Problématiques:",1, white)
-            screen.blit(label_pb, (width*1/3, 100))
-            for i in range(len(problematic1)):
+            for i in range(len(sentence_title)):
                 souris_rectangle.center = (999999, 99999)
-                slow_sentence_title += problematic1[i]
-                label_pb1 = norm.render( "{}".format(slow_sentence_title), 1, black)
-                screen.blit(label_pb1, (250,height*1/3))
-                time.sleep(reading_speed)
-                pygame.display.flip()
-            slow_sentence_title = ""
-            for i in range(len(problematic2)):
-                souris_rectangle.center = (999999, 99999)
-                slow_sentence_title += problematic2[i]
-                label_pb2 = norm.render( "{}".format(slow_sentence_title), 1, black)
-                screen.blit(label_pb2, (250,height/2))
-                label_pb1 = norm.render("{}".format(problematic1), 1, black)
-                screen.blit(label_pb1, (250, height*1/3))
-                time.sleep(reading_speed)
-                pygame.display.flip()
-            slow_sentence_title = ""
-            for i in range(len(problematic3)):
-                souris_rectangle.center = (999999, 99999)
-                slow_sentence_title += problematic3[i]
-                label_pb3 = norm.render( "{}".format(slow_sentence_title), 1, black)
-                screen.blit(label_pb3, (250,height*2/3))
-                label_pb1 = norm.render("{}".format(problematic1), 1, black)
-                screen.blit(label_pb1, (250, height*1/3))
-                label_pb2 = norm.render("{}".format(problematic2), 1, black)
-                screen.blit(label_pb2, (250, height/2))
+                slow_sentence_title += sentence_title[i]
+                label_title = title.render("{}".format(slow_sentence_title), 1, red)
+                screen.blit(label_title, (400,20))
                 time.sleep(reading_speed)
                 pygame.display.flip()
             lecture = False
         else :
-            label_pb1 = norm.render("{}".format(problematic1), 1, black)
-            screen.blit(label_pb1, (250, height*1/3))
-            label_pb2 = norm.render("{}".format(problematic2), 1, black)
-            screen.blit(label_pb2, (250, height/2))
-            label_pb3 = norm.render("{}".format(problematic3), 1, black)
-            screen.blit(label_pb3, (250, height*2/3))
-            souris_rectangle.center = (pygame.mouse.get_pos())
+            label_title = title.render("{}".format(sentence_title), 1, red)
+            screen.blit(label_title, (400, 20))
+
+
+    sentence_norme = "Dans la norme UTF-8, chancun de ses charactères est codé sur un octet, et le fichier pèse donc 16o ctets."
 
     return lecture
 
@@ -233,8 +275,7 @@ def screen_update(screen,red,lecture,reading_speed,slides,height,black,white,wid
     screen_update_picture(screen)
     lecture = screen_update_label(screen,red,lecture,reading_speed,slides,height,black,white,width)
     souris_rectangle.center = (pygame.mouse.get_pos())
-    if slides == 5:
-        pygame.draw.rect(screen, white, (width/2, 0, 10, height))
+
     pygame.display.flip()  #automatically update the screen
 
     return lecture

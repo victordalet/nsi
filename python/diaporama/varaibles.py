@@ -9,7 +9,8 @@ def constantes():
     reading_speed = 0.1 #time of reading
     bin_position = 999999, 55555
     speed_transition = 2
-    return fps, width, height, key,reading_speed,bin_position,speed_transition
+    centre = (width/2,height/2) # center position
+    return fps, width, height, key,reading_speed,bin_position,speed_transition,centre
 
 def colors():
     red = (255,0,0)
@@ -21,6 +22,3 @@ def variation():
     lecture = True
     slides = 0
     return lecture,slides
-
-
-

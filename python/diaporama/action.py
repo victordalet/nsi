@@ -1,51 +1,82 @@
 import pygame
-def action_event(event,slides,list_rect,width,height):
+def action_event(event,slides,list_rect,width,height,lecture,centre,bin_position):
     """
-    for mouse click
+    for mousses click
     :param event:
     :param slides:
     :param list_rect:
     :param width:
     :param height:
+    :param lecture:
     :return:
     """
     pygame.event.pump()
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if list_rect[0].collidepoint(event.pos):
-            if slides == 0:
-                list_rect[1].center = (1 / 4 * width, -height)
-                list_rect[2].center = (3 / 4 * width, -height)
-                slides = 1
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if list_rect[1].collidepoint(event.pos):
-            if slides == 1:
-                slides = 2
-            elif slides == 2:
-                slides = 3
+    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  # left = 1 right = 3 middle = 2 for mousse
+        if slides == 0:
+            slides = 1
+        elif slides == 2:
+            slides = 2.1
+        elif slides == 2.2:
+            slides = 3
+        elif slides == 4:
+            slides = 5
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if list_rect[2].collidepoint(event.pos):
-            if slides == 1:
-                slides = 2
-            elif slides == 3:
-                slides = 4
+    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 3:  # left = 1 right = 3 middle = 2 for mousse
+        if slides == 1:
+            slides = 2
+        elif slides == 2.1:
+            slides = 2.2
+        elif slides == 3:
+            slides = 4
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if list_rect[3].collidepoint(event.pos):
-             slides = 5
+    if event.type == pygame.MOUSEBUTTONUP:
+        if slides == 1:
+            if list_rect["trad_rectangle"].collidepoint(event.pos):
+                list_rect["exemple1trad_rectangle"].center = centre
+            else:
+                list_rect["exemple1trad_rectangle"].center = (bin_position)
+            if list_rect["glouton_rectangle"].collidepoint(event.pos):
+                list_rect["exemple1glouton_rectangle"].center = centre
+            else:
+                list_rect["exemple1glouton_rectangle"].center = (bin_position)
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if list_rect[6].collidepoint(event.pos):
-             slides = 6
+        if slides == 3:
+            if list_rect["trad_rectangle"].collidepoint(event.pos):
+                list_rect["reseau_trad_rectangle"].center = centre
+            else:
+                list_rect["reseau_trad_rectangle"].center = (bin_position)
+            if list_rect["glouton_rectangle"].collidepoint(event.pos):
+                list_rect["reseau_glouton_rectangle"].center = centre
+            else:
+                list_rect["reseau_glouton_rectangle"].center = (bin_position)
+            if list_rect["go_rectangle"].collidepoint(event.pos):
+                list_rect["reseau_resultat_rectangle"].center=(width/2,height*3.5/4)
+            else :
+                list_rect["reseau_resultat_rectangle"].center = (bin_position)
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if list_rect[8].collidepoint(event.pos):
-             slides = 7
+        if slides == 5:
+            if list_rect["trad_rectangle"].collidepoint(event.pos):
+                list_rect["compression_trad_rectangle"].center = centre
+            else:
+                list_rect["compression_trad_rectangle"].center = (bin_position)
+            if list_rect["glouton_rectangle"].collidepoint(event.pos):
+                list_rect["compression_glouton_rectangle"].center = centre
+            else:
+                list_rect["compression_glouton_rectangle"].center = (bin_position)
+            if list_rect["go_rectangle"].collidepoint(event.pos):
+                list_rect["compression_resultat_rectangle"].center=(width/2,height*3.5/4)
+            else :
+                list_rect["compression_resultat_rectangle"].center = (bin_position)
 
-    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 3: # left = 1 right = 3 middle = 2 for mousse
+
+    if pygame.key.get_pressed()[pygame.K_RIGHT]:
+        pygame.event.pump()
         slides -= 1
-    return slides
+
+
+
+    return slides,lecture
 
 def result(slides,bin_position,width,height,list_rect,lecture,speed_transition,list_picture):
     """
@@ -60,46 +91,45 @@ def result(slides,bin_position,width,height,list_rect,lecture,speed_transition,l
     :param list_picture:
     :return:
     """
+
     if slides == 1:
-        if list_rect[1].center != (1 / 4 * width, height/2):
-            list_rect[1].y += speed_transition
-            list_rect[2].y += speed_transition
-        else:
-            list_rect[1].center = (1 / 4 * width, height/2)
-            list_rect[2].center = (3 / 4 * width, height/2)
+        if list_rect["trad_rectangle"].y < height/2:
+            list_rect["trad_rectangle"].y += speed_transition
+            list_rect["glouton_rectangle"].y += speed_transition
+            lecture = True
 
     elif slides == 2:
-        if list_rect[1].center != (width/2,height/2):
-            list_rect[1].x += speed_transition
-            list_rect[2].x += speed_transition+2
-            lecture = True
+        list_rect["trad_rectangle"].center = (width*1/5,-height)
+        list_rect["glouton_rectangle"].center = (width*4/5,-height)
+        list_rect["exemple2_rectangle"].center = (width/2,height/2)
+
+    if slides == 2.1:
+        list_rect["exemple2_rectangle"].center = (bin_position)
+        list_rect["memoire_rectangle"].center = (width / 2, height / 2)
+
+    if slides == 2.2:
+        list_rect["reseau_dic_rectangle"].center = (width/2,height/2)
+        list_rect["memoire_rectangle"].center = (bin_position)
 
     elif slides == 3 :
-        if list_rect[2].center != (width/2,height/2):
-            list_rect[1].x -= speed_transition
-            list_rect[2].x -= speed_transition
-            lecture = True
+        if list_rect["trad_rectangle"].y < height/2:
+            list_rect["trad_rectangle"].y += speed_transition
+            list_rect["glouton_rectangle"].y += speed_transition
+            list_rect["reseau_dic_rectangle"].center = (bin_position)
+            list_rect["go_rectangle"].center = (10,10)
+
 
     elif slides == 4:
-        list_rect[1].center = (bin_position)
-        list_rect[2].center = (bin_position)
-        list_rect[3].center = (width/2,height/2)
+        list_rect["trad_rectangle"].center = (width*1/5,-height)
+        list_rect["glouton_rectangle"].center = (width*4/5,-height)
+        list_rect["reseau_resultat_rectangle"].center = (bin_position)
+        list_rect["arbre_rectangle"].center = (width/2,height/2)
 
-    elif slides == 5:
-        list_rect[5].center = (width*1/3 -180,100)
-        list_rect[6].center = (width * 2 / 3 +150,100)
-        list_rect[9].center = (width*2/3 +120 , height/2+100)
-        list_rect[10].center = (width * 1 / 3 -250 + 150, height / 2+100)
+    elif slides == 5 :
+        if list_rect["trad_rectangle"].y < height/2:
+            list_rect["trad_rectangle"].y += speed_transition
+            list_rect["arbre_rectangle"].center = (bin_position)
+            list_rect["glouton_rectangle"].y += speed_transition
+            list_rect["go_rectangle"].center = (10,10)
 
-    elif slides == 6:
-        list_rect[5].center = (bin_position)
-        list_rect[6].center = (bin_position)
-        list_rect[9].center = (bin_position)
-        list_rect[10].center = (bin_position)
-        list_rect[8].center = (width/2,height/2)
-
-    elif slides == 7:
-        list_rect[3].center = (width / 2, height / 2)
-        list_rect[7].center = (width / 2, height / 2)
     return lecture
-
